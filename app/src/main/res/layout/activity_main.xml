@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="activityMain"
+            type="com.example.invisiaxploretask.viewmodel.FamilyViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutParents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:hint="@string/label_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edParent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutChild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:hint="@string/label_child"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutParents">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edChild"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddFamily"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                style="@style/mh5_semi_reg"
+                android:text="Add Family"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_button_selected"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutChild"
+                android:layout_marginTop="@dimen/_20sdp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRedirect"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:text="Show Family Details"
+                style="@style/mh5_semi_reg"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_button_selected"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnAddFamily"
+                android:layout_marginTop="@dimen/_20sdp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

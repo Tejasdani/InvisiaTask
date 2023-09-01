@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.InvisiaXploreTask" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="mh3_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m3_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--    16MH4-->
+    <style name="mh4_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m4_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+
+
+    <style name="mh5_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m5_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+</resources>

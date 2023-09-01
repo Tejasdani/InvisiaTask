@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">InvisiaXploreTask</string>
+
+    <string name = "label_parent">Number of Parents</string>
+    <string name = "label_child">Number of Children</string>
+    <string name="no_data_available">No Data Available...</string>
+    <string name="no_parents">Number of Parents:</string>
+    <string name="no_child">Number of Child:</string>
+    <string name="valid_parent_input">Please enter a number.</string>
+    <string name="invalid_number">Invalid number format</string>
+
+</resources>
