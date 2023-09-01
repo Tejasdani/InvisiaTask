@@ -37,9 +37,9 @@ class FamilyListAdapter(private val numberList: List<FamilyData>) :
 
         fun bind(familyData: FamilyData) {
             binding.tvItemParent.text =
-                "${cx.resources.getString(R.string.no_parents)}: ${familyData.noOfParents}"
+                "${cx.resources.getString(R.string.no_parents)} ${familyData.noOfParents}"
             binding.tvItemChild.text =
-                "${cx.resources.getString(R.string.no_child)}: ${familyData.noOfChild}"
+                "${cx.resources.getString(R.string.no_child)} ${familyData.noOfChild}"
         }
 
         companion object {
